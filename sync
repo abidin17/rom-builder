@@ -7,7 +7,7 @@ cd /tmp/rom
 repo init -u git://github.com/AospExtended/manifest.git -b 11.x
 
 # Clone local manifest! So that no need to manually git clone repos or change hals, you can use normal git clone or rm and re clone, they will cost little more time, and you may get timeout! Let's make it quit and depth=1 too.
-https://github.com/mi8lite/android_device_xiaomi_platina.git -b lineage-18.1 device/xiaomi/platina
+https://github.com/D4rkKnight21/android_device_xiaomi_platina.git -b 11 device/xiaomi/platina
 https://github.com/mi8lite/android_device_xiaomi_sdm660-common.git -b lineage-18.1 device/xiaomi/sdm660-common
 https://github.com/PlatinaDevsSDM660/android_kernel_xiaomi_sdm660.git -b 11-EAS kernel/xiaomi/sdm660
 https://github.com/PlatinaDevsSDM660/android_vendor_xiaomi_sdm660-common.git -b eas vendor/xiaomi
