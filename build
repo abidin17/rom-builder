@@ -15,7 +15,7 @@ ccache -z # Clear old stats, so monitor script will provide real ccache statisti
 #make api-stubs-docs || echo no problem, we need ccache
 #make system-api-stubs-docs || echo no problem we need ccache
 #make test-api-stubs-docs || echo no problem, we need ccache
-#m aex -j$(nproc --all) | tee log.txt # dont remove that '&'
+#m aex -j8$ # dont remove that '&'
 #sleep 85m
 #kill %1
 #ccache -s
@@ -49,7 +49,7 @@ make api-stubs-docs || echo no problem
 make system-api-stubs-docs || echo no problem
 make test-api-stubs-docs || echo no problem
 
-m aex -j$(nproc --all) | tee log.txt \
+m aex -j8$ \
 	&& send_zip=$(up out/target/product/platina/*zip) && tg $id "Build Succeed!
 $send_zip" \
 	|| tmate -S /tmp/tmate.sock new-session -d && tmate -S /tmp/tmate.sock wait tmate-ready && send_shell=$(tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}') && tg $id "Build Failed" && tg $id "$send_shell" && ccache -s && sleep 2h
