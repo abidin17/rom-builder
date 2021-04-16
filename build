@@ -37,10 +37,10 @@ tg(){
 	bot_api=1602913756:AAHEmD1b44yfi06YuAT-VR2cTCaTRx9nmt0 # Your tg bot api, dont use my one haha, it's better to encrypt bot api too.
 	your_telegram_id=$1 # No need to touch 
 	msg=$2 # No need to touch
-	curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=@D4rkKnight21_bot"
+	curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=-1001198368066"
 }
 
-id=@d4rkKnight21_bot # Your telegram id
+id=1310272071 # Your telegram id
 
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
 
