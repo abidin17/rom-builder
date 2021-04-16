@@ -7,7 +7,7 @@ env: # Environment variables to pass to all tasks
     rclone_config: "ENCRYPTED[62fb2f7b7b5defb7cddc8bf9410668a65e4a4a3fd37f0d86b34ce4004b108e961c919c33c3b0c9d706ac59f879b7c9e3]"
 
 task:
-    name: aospext # Project name
+    name: aospextended # Project name
     timeout_in: 120m # Otherwise it will timeout at 60m automatically, 120m highest in free account
     container:
       image: apon77/aosp:latest # It has built-in setup environment + repo, aria2, rclone, pigz, username ci, and email ci@ci.ci [You can use your own docker image if you want, or you can use this one too!]
