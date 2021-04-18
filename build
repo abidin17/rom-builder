@@ -49,7 +49,7 @@ make_metalava(){
 
 make_rom(){
 	tg_post_msg "<b>d4Rk CI Build Triggered</b>" "$CHATID"
-	m aex -j8
+	m aex -j10
 	if [ -f out/target/product/platina/*.zip ]; then
 		zip=$(up out/target/product/platina/*.zip)
 		echo " "
